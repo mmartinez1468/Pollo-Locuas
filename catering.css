@@ -1,0 +1,92 @@
+#skills {
+    background-color: rgb(240, 234, 234);
+    padding-bottom: 4rem;
+}
+.knowledgeTextWrapper {
+    background-color: rgb(255, 255, 255);
+}
+.landing-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/pollo-carts.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust darkness */
+    background-blend-mode: multiply;
+}
+
+
+#catering {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5rem 0 ;
+}
+#cateringWrapper {
+    margin-top: 3rem;
+}
+.catering-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.catering-intro > img {
+    height: 100px;
+    width: 100px;
+}
+.catering-intro > p {
+    width: 80%;
+}
+.tray-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.tray-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    width: 320px;
+    margin-top: 2rem;
+    border-top: 3px solid #e5c42a;
+}
+.tray-container-img > img {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+}
+.tray-container-info {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 1rem;
+}
+.tray-container-info > h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #126497;
+}
+.tray-container-info > span {
+    font-size: 1rem;
+    margin-top: .5rem;
+    color: #000000;
+}
+.cater-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
