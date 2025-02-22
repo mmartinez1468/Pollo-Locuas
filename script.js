@@ -1,3 +1,35 @@
+/*=============== LOADER ===============*/
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.loader');
+  
+  loader.classList.add('loaderHidden');
+
+  loader.addEventListener('transitioned', () => {
+    document.body.removeChild('loader');
+  })
+})
+
+
+
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+  const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId)
+
+  toggle.addEventListener('click', () =>{
+      // Add show-menu class to nav menu
+      nav.classList.toggle('show-menu')
+
+      // Add show-icon to show and hide the menu icon
+      toggle.classList.toggle('show-icon')
+  })
+}
+
+showMenu('nav-toggle','nav-menu')
+
+
+
+/*=============== MENU ===============*/ 
 function changeTab(meal) {
     // Remove 'active' class from all tabs and content
     document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
@@ -24,21 +56,6 @@ function changeTab(meal) {
         });
     });
   });
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   // Separate arrays for each menu category
@@ -237,7 +254,6 @@ function changeTab(meal) {
   
   
   ];
-  
   const burritosProducts = [
   {
     id: 1,
@@ -413,7 +429,6 @@ function changeTab(meal) {
   },
   // Add more dinner items here
   ];
-  
   const chimichangasProducts = [
     {
       id: 1,
@@ -587,7 +602,6 @@ function changeTab(meal) {
   },
   // Add more lunch items here
   ];
-  
   const tortasProducts = [
   {
       id: 1,
@@ -741,7 +755,6 @@ function changeTab(meal) {
   }
     // Add more dinner items here
   ];
-  
   const dinnersProducts = [
     {
       id: 1,
@@ -866,7 +879,6 @@ function changeTab(meal) {
     },
   // Add more dinner items here
   ];
-  
   const mariscosProducts = [
     {
       id: 1,
@@ -1146,7 +1158,6 @@ function changeTab(meal) {
   
   // Add more dinner items here
   ];
-  
   const sopesProducts = [
   {
       id: 1,
@@ -1160,7 +1171,6 @@ function changeTab(meal) {
   },
   // Add more dinner items here
   ];
-  
   const tostadasProducts = [
     {
       id: 1,
@@ -1208,7 +1218,6 @@ function changeTab(meal) {
   },
   // Add more dinner items here
   ];
-  
   const tamalesProducts = [
   {
       id: 1,
@@ -1222,7 +1231,6 @@ function changeTab(meal) {
   },
   // Add more dinner items here
   ];
-  
   const quesadillasProducts = [
   {
       id: 1,
@@ -1327,40 +1335,7 @@ function changeTab(meal) {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  window.addEventListener('load', () => {
-    const loader = document.querySelector('.loader');
-    
-    loader.classList.add('loaderHidden');
-  
-    loader.addEventListener('transitioned', () => {
-      document.body.removeChild('loader');
-    })
-  })
-  
-  
-  
-  
-  
-  
-  
-  
+  /*=============== REPLAYS ANIMATION WHEN IN VIEWPORT ===============*/ 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1377,44 +1352,7 @@ function changeTab(meal) {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  /*=============== SHOW MENU ===============*/
-  const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-          nav = document.getElementById(navId)
-  
-    toggle.addEventListener('click', () =>{
-        // Add show-menu class to nav menu
-        nav.classList.toggle('show-menu')
-  
-        // Add show-icon to show and hide the menu icon
-        toggle.classList.toggle('show-icon')
-    })
-  }
-  
-  showMenu('nav-toggle','nav-menu')
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  /*=============== REVIEW CAROUSEL ===============*/
   document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.carousel');
   const slides = Array.from(document.querySelectorAll('.carousel-slide'));
